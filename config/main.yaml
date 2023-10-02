@@ -1,0 +1,23 @@
+  networks:
+    data_source: network
+    enabled:
+      - sepolia
+    details:
+      sepolia:
+        rpc: 'your rpc'
+        max_priority_fee_per_gas: 6000000
+        agents:
+          'current agent address':
+            executor: pga
+            keeper_worker_address: 'your worker address'
+            key_pass: 'your key password'
+            accept_max_base_fee_limit: true
+            accrue_reward: true
+            tx_resend_or_drop_after_blocks: 4
+            tx_resend_max_gas_price_gwei: 1000
+            tx_resend_max_attempts: 4
+            gas_price_priority_add_gwei: 100
+            # data_source: subgraph
+            # subgraph_url: https://api.studio.thegraph.com/query/44364/ppav2-rd-sepolia-b11/version/latest
+            max_block_delay: 10
+            resolve_min_success_count: 3

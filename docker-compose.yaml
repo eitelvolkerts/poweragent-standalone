@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  bot:
+    image: eitelvolkerts/pagentv2:v0.3.0 #latest1 #polipaul/agent-v2-bot:v0.2.0
+    restart: always
+    volumes:
+      - ./config:/usr/app/config
+      - ./keys:/usr/app/keys
