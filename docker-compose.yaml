@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   bot:
-    image: eitelvolkerts/pagentv2:v0.4.0 
+    image: eitelvolkerts/pagentv2:latest
     restart: always
     volumes:
       - ./config:/usr/app/config
