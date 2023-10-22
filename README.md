@@ -1,5 +1,5 @@
-# sepolia-agent
-Sepolia poweragent for use without dappnode
+# Standalone agent
+Standalone PowerAgent package for use without dappnode
 
 To install, perform the following:
 1. Clone the directory
