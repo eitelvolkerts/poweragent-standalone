@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   bot:
+    environment:
+      - LOG_LEVEL=debug
     image: eitelvolkerts/pagentv2:latest
     restart: always
     volumes:
