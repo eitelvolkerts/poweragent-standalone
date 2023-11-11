@@ -4,7 +4,8 @@ services:
     environment:
       - LOG_LEVEL=debug
       - ACCRUE_REWARD=false
-    image: eitelvolkerts/pagentv2:latest
+      - APP_ENV=docker-wrapped-standalone
+    image: polipaul/agent-v2-bot:latest #eitelvolkerts/pagentv2:latest
     restart: always
     volumes:
       - ./config:/usr/app/config
