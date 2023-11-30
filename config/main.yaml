@@ -1,11 +1,9 @@
   networks:
-    data_source: network
     enabled:
       - sepolia
     details:
       sepolia:
         rpc: 'your rpc'
-        max_priority_fee_per_gas: 6000000
         agents:
           'current agent address':
             executor: pga
